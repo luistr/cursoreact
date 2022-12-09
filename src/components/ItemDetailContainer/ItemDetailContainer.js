@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import ItemCount from '../ItemCount/ItemCount';
 
 import data from '../../data.json';
 
@@ -31,6 +32,7 @@ const ItemDetailContainer = () => {
       <h2>{item?.title}</h2>
       <p>Precio: {item?.price}</p>
       <p>{item?.description}</p>
+      <p><ItemCount /></p>
       <p>
         <img src={item?.image} alt="" width="300px" />
       </p>
