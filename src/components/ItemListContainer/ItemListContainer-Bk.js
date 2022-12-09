@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
+//import Catalogo from '../../routes/Catalogo/Catalogo';
+import './itemlistcontainer.css';
 
-
-const Catalogo = () => {
+const ItemListContainer = () => {
   const { id } = useParams();
   const [producto, setProducto] = useState({});
 
   useEffect(() => {
-    fetch(`https://swapi.dev/api/people/${id}`)
+    //fetch(`https://swapi.dev/api/people/${id}`)
+    fetch(`https://swapi.dev/api/people/`)
       .then((res) => res.json())
       .then(setProducto);
     //.then(json=>console.log(json));
@@ -30,4 +32,4 @@ const Catalogo = () => {
   );
 };
 
-export default Catalogo;
+export default ItemListContainer;

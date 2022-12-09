@@ -11,7 +11,7 @@ const NavBar = () => {
   return (
     <div className="topbar">
       <h1 className="logo">
-        <img src={logo} alt="Tienda Ejemplo" /> Tienda Azul
+      <Link to='/'><img src={logo} alt="Tienda Ejemplo" /></Link>
       </h1>
 
       <ul className="nav">

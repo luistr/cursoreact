@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
-const Producto = () => {
+const ItemDetailContainer = () => {
   const { id } = useParams();
   const [item, setItem] = useState({});
 
@@ -21,4 +21,4 @@ const Producto = () => {
   );
 };
 
-export default Producto;
+export default ItemDetailContainer;
