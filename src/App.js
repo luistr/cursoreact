@@ -2,11 +2,11 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import NavBar from './components/NavBar/NavBar';
-import Home from './routes/Home/Home';
-import Catalogo from './routes/Catalogo/Catalogo';
-import Producto from './routes/Producto/Producto';
-
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+
+import ItemListContainer2 from './components/ItemListContainer/ItemListContainer2';
+import ItemDetailContainer2 from './components/ItemDetailContainer/ItemDetailContainer2';
 
 import './style.css';
 
@@ -15,9 +15,9 @@ export default function App() {
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/category" element={<Catalogo />} />
-        <Route exact path="/item/:id" element={<Producto />} />
+        <Route exact path="/" element={<ItemListContainer2 />} />
+        <Route exact path="/category/:id" element={<ItemListContainer2 />} />
+        <Route exact path="/item/:id" element={<ItemDetailContainer2 />} />
       </Routes>
     </BrowserRouter>
   );

@@ -19,16 +19,16 @@ const NavBar = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/category">Catálogo</Link>
+          <Link to="/category/men's clothing">Men's Clothing</Link>
         </li>
         <li>
-          <a href="#"> Pelotas </a>
+          <Link to="/category/jewelery">Jewelery</Link>
         </li>
         <li>
-          <a href="#"> Robots </a>
+          <Link to="/category/electronics">Electronics</Link>
         </li>
         <li>
-          <a href="#"> Drones </a>
+          <Link to="/category/women's clothing">Women's Clothing</Link>
         </li>
       </ul>
 
